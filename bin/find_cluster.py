@@ -1608,7 +1608,9 @@ def cnc(qry, alg='mcl', rnd=2, chk=10**7, output=''):
         cx, cy = list(map(l2n.get, [x, y]))
         if cx and cy and cx == cy:
             out = '\t'.join(map(str, [cx, x, y, z]))
-            _o.write(out + '\n')
+            out1 = out + '\n'
+            #_o.write(out + '\n')
+            _o.write(out1.encode())
 
     _o.close()
 
@@ -1646,7 +1648,8 @@ def cnc(qry, alg='mcl', rnd=2, chk=10**7, output=''):
 
         j = i.split('\t')
         k = '\t'.join(j[1:])
-        _o.write(k)
+        #_o.write(k)
+        _o.write(k.encode())
         flag += 1
 
     _o.close()
