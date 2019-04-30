@@ -87,7 +87,7 @@ SwiftOrtho implements two cluster algorithms: Markov Clustering, and Affinity Ar
         # use MCL
         $python SwiftOrtho/bin/find_cluster.py -i input.fsa.sc.orth -a mcl -I 1.5 > input.fsa.sc.orth.mcl
         # use APC
-        $python SwiftOrtho/bin/find_cluster.py -i input.fsa.sc.orth -a apc -I 1.5 > input.fsa.sc.orth.mcl
+        $python SwiftOrtho/bin/find_cluster.py -i input.fsa.sc.orth -a apc -I 1.5 > input.fsa.sc.orth.apc
 
 
 -i: input file. Input file contains all the orthology relationships. For example:
