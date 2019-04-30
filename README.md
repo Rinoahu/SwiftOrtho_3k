@@ -84,7 +84,11 @@ Make sure that you have the following installed
 
 SwiftOrtho implements two cluster algorithms: Markov Clustering, and Affinity Aropagation in Python. Here is an example of how to use it.
 
+        # use MCL
         $python SwiftOrtho/bin/find_cluster.py -i input.fsa.sc.orth -a mcl -I 1.5 > input.fsa.sc.orth.mcl
+        # use APC
+        $python SwiftOrtho/bin/find_cluster.py -i input.fsa.sc.orth -a apc -I 1.5 > input.fsa.sc.orth.mcl
+
 
 -i: input file. Input file contains all the orthology relationships. For example:
 
@@ -105,7 +109,7 @@ SwiftOrtho implements two cluster algorithms: Markov Clustering, and Affinity Ar
 		A|a5	A|a6
 		... 
 
-If users prefer [MCL](https://micans.org/mcl "https://micans.org/mcl"), they can follow the steps below:
+If users want to use the original [MCL](https://micans.org/mcl "https://micans.org/mcl") for clustering, they can follow the steps below:
 
 
         $cut -f2-4 input.fsa.sc.orth > input.fsa.sc.orth.xyz
