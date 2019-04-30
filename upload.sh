@@ -18,7 +18,7 @@ git config --global user.name Rinoahu
 git remote rm origin
 
 git add -A .
-git commit -m 'fix some bugs'
+git commit -m 'improved README'
 git remote add origin https://github.com/Rinoahu/SwiftOrtho_3k
 
 git pull origin master

@@ -72,7 +72,7 @@ Make sure that you have the following installed
         CO	A|a2	B|b2	1.41459539212
         ...
 
-    Col 1: orthology relationship, one of OT(ortholog), CO(co-ortholog) and IP(in-paralog).
+    Col 1: orthology relationship, one of OT(ortholog), CO(co-ortholog), or IP(in-paralog).
     Col 2: identifier of gene in species A.
     Col 3: identifier of gene in species B.
     Col 4: weight of orthology relationship.
